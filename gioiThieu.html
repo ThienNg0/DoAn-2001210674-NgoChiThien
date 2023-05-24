@@ -113,15 +113,25 @@
         <div class="body-content">
           <h1>Giới thiệu về dự án</h1>
           <div class="content-shop">
-            <p style="text-align: center;"><strong>GIỚI THIỆU VỀ CHÚNG TÔI</strong></p>
+            <p style="text-align: center; font-size: 20px;"><strong>My Information</strong></p>
             <ul style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-              
-              <li>Xin chào! Chúng tôi là nhóm sinh viên đam mê công nghệ và thương mại điện tử, và chúng tôi tự hào giới thiệu dự án của chúng tôi - một trang web bán sản phẩm về Logitech.</li>
+              <div class="about-me">
+                <img src="image/avt.jpg" alt="Your Name">
+                <h3>ID: <b>2001210674</b></h3>
+                <h3>Name: <b>Ngô Chí Thiện</b></h3>
+                <h3>Class: <b>12DHTH01</b></h3>
+                <p>Project: Tạo 1 website bán linh kiện máy tính có Thương hiệu là Logitech</p>
+                
+              </div>
+              <div id="read-more-button" onclick="toggleContent()"><b>Xem Thêm</b></div>
+              <div id="more-content" style="display: none;">
+              <li>Xin chào! Tôi là sinh viên đam mê công nghệ và thương mại điện tử, và chúng tôi tự hào giới thiệu dự án của chúng tôi - một trang web bán sản phẩm về Logitech.</li>
               <li>Với sự đam mê về công nghệ và niềm yêu thích với thương hiệu Logitech, chúng tôi đã tạo ra một trang web chuyên về các sản phẩm công nghệ cao cấp từ Logitech, từ chuột, bàn phím, tai nghe, webcam và nhiều sản phẩm khác.</li>
               <li>Dự án của chúng tôi nhằm cung cấp cho khách hàng một trải nghiệm mua sắm trực tuyến tuyệt vời và thuận tiện. Trên trang web, bạn sẽ tìm thấy một bộ sưu tập đa dạng của các sản phẩm Logitech chất lượng cao với thiết kế tinh tế và tính năng nổi bật.</li>
               <li>Chúng tôi cam kết đem đến cho khách hàng những sản phẩm chính hãng, đảm bảo về chất lượng và hiệu suất. Đội ngũ chúng tôi đã tận dụng công nghệ tiên tiến để tạo ra một giao diện người dùng thân thiện, giúp khách hàng dễ dàng tìm kiếm, lựa chọn và mua sắm các sản phẩm Logitech một cách nhanh chóng và tiện lợi.</li>
               <li>Ngoài ra, chúng tôi luôn đặt khách hàng lên hàng đầu, và cam kết cung cấp dịch vụ chăm sóc khách hàng tận tâm và chuyên nghiệp. Đội ngũ hỗ trợ của chúng tôi sẵn sàng trợ giúp và giải đáp mọi thắc mắc của khách hàng thông qua các kênh liên lạc như chat trực tuyến, điện thoại và email...</li>
               <li>Với các sản phẩm được bán ở hầu hết các quốc gia trên thế giới, Logitech thiết kế các sản phẩm giúp các doanh nghiệp phát triển mạnh mẽ và kết nối mọi người với nhau thông qua âm nhạc, trò chơi, phát trực tuyến, video và máy tính. Các thương hiệu của Logitech bao gồm Logitech, Logitech G, ASTRO Gaming, Ultimate Ears, Jaybird, Blue Microphones và Streamlabs.</li>
+            </div>
             
             </ul>
             <div class="photo-wrapper">
@@ -145,6 +155,21 @@
             <p style="font-size: 20px;">Hãy khám phá các sản phẩm của chúng tôi và liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi hoặc ý kiến đóng góp nào!</p>
           </div>
           </div>
+          <script>
+            function toggleContent() {
+              var moreContent = document.getElementById("more-content");
+              var readMoreButton = document.getElementById("read-more-button");
+          
+              if (moreContent.style.display === "none") {
+                moreContent.style.display = "block";
+                readMoreButton.innerHTML = "Ẩn đi";
+              } else {
+                moreContent.style.display = "none";
+                readMoreButton.innerHTML = "Xem thêm";
+              }
+            }
+          </script>
+          
           <footer>
             <div class="footer-container">
               <div class="footer-row">
